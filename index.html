@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flappy Bird Game</title>
+	<style type="text/css">
+		body{
+			background: black;
+			color: white;
+			text-align: center;
+		}
+		#container{
+			margin: 20px auto;
+			width: 600px;
+			position: relative;
+			overflow: hidden;
+		}
+		.initial{
+			width: 600px;
+			height: 500px;
+			background: green;
+			padding-top: 195px;
+		}
+		#screen{
+			width: 600px;
+			height: 500px;
+			overflow: hidden;
+		}
+		#inner-screen{
+			/*width: 10000px;*/
+			height: 500px;
+			background: url("bg1.jpg");
+
+		}
+		.bird {
+			width: 50px;
+			height: 50px;
+			position: absolute;
+		}
+		.score-info{
+			padding-top: 20px;
+		}
+		.initial a{
+			display: block;
+		}
+		.gameover{
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Flappy Bird</h1>
+	<div class="detail">Developed by: Sailendra Shakya</div>
+	<div class="score-info">
+			<div>Score:<span id="score">0</span> | Level:<span id="level">0</span></div>
+			<div></div>
+		</div>
+	<div id="container">
+		<div id="screen"><div id="inner-screen"></div></div>	
+	</div>
+	<script type="text/javascript" src="jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
